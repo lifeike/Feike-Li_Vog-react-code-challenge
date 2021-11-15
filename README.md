@@ -4,7 +4,7 @@
 
 1. At this code challenge we are looking for your coding skills, familiarity with JavaScript, React and Redux, utilizing best practices, clean coding, reusability, version control, teamwork and problem solving.
 2. installation
-   - git clone && cd openhouse-coding-exercise
+   - git clone && cd Feike-Li_Vog-react-code-challenge
    - npm install && npm start
 
 #### Nice to have
