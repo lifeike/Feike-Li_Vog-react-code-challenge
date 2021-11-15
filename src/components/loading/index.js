@@ -1,7 +1,7 @@
 import React, { memo } from "react"
+
 import { Spin } from "antd"
 import { connect } from "react-redux"
-
 const Loading = (props) => {
   return (
     <>

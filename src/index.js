@@ -4,7 +4,11 @@ import history from "./history"
 import store from "./store"
 import { Provider } from "react-redux"
 import { ConnectedRouter } from "connected-react-router"
+<<<<<<< HEAD
 import Home from "./routers/Home"
+=======
+import Universities from "./routers/Universities"
+>>>>>>> feature/universities-page
 import Tab from "./components/Tab"
 import Loading from "./components/loading"
 import { Switch, Route, Redirect } from "react-router-dom"
@@ -20,8 +24,13 @@ ReactDOM.render(
           <div className="container">
             <Tab history={history} />
             <Switch>
+<<<<<<< HEAD
               <Route path="/home" component={() => <Home />} />
               <Redirect to="/home" />
+=======
+              <Route path="/universities" component={() => <Universities />} />
+              <Redirect to="/universities" />
+>>>>>>> feature/universities-page
             </Switch>
           </div>
         </div>

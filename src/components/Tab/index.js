@@ -1,6 +1,5 @@
 import React from "react"
 import "./index.css"
-
 export default function Tab(props) {
   return (
     <>
@@ -11,6 +10,13 @@ export default function Tab(props) {
             props.history.push("/home")
           }}>
           <input type="radio" name="options" id="option1" autoComplete="off" /> Home
+        </label>
+        <label
+          className={`btn btn-secondary Tab-button ${props.history.location.pathname === "/universities" ? "active" : ""}`}
+          onClick={() => {
+            props.history.push("/universities")
+          }}>
+          <input type="radio" name="options" id="option2" autoComplete="off" /> Universities
         </label>
       </div>
     </>
