@@ -6,7 +6,7 @@ export default function Tab(props) {
     <>
       <div className="btn-group btn-group-toggle link-style" data-toggle="buttons">
         <label
-          className={`btn btn-secondary Tab-button ${props.history.location.pathname == "/home" ? "active" : ""}`}
+          className={`btn btn-secondary Tab-button ${props.history.location.pathname === "/home" ? "active" : ""}`}
           onClick={() => {
             props.history.push("/home")
           }}>
