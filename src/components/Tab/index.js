@@ -18,6 +18,13 @@ export default function Tab(props) {
           }}>
           <input type="radio" name="options" id="option2" autoComplete="off" /> Universities
         </label>
+        <label
+          className={`btn btn-secondary Tab-button ${props.history.location.pathname === "/postalLookup" ? "active" : ""}`}
+          onClick={() => {
+            props.history.push("/postalLookup")
+          }}>
+          <input type="radio" name="options" id="option3" autoComplete="off" /> Postal Lookup
+        </label>
       </div>
     </>
   )

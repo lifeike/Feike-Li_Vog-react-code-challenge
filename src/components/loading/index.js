@@ -15,6 +15,7 @@ const Loading = (props) => {
     </>
   )
 }
+
 function mapStateToProps(state) {
   return state.loading
 }

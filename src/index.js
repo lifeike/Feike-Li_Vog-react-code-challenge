@@ -6,6 +6,7 @@ import { Provider } from "react-redux"
 import { ConnectedRouter } from "connected-react-router"
 import Home from "./routers/Home"
 import Universities from "./routers/Universities"
+import PostalLookup from "./routers/PostalLookup"
 import Tab from "./components/Tab"
 import Loading from "./components/loading"
 import { Switch, Route, Redirect } from "react-router-dom"
@@ -23,6 +24,7 @@ ReactDOM.render(
             <Switch>
               <Route path="/home" component={() => <Home />} />
               <Route path="/universities" component={() => <Universities />} />
+              <Route path="/postalLookup" component={() => <PostalLookup />} />
               <Redirect to="/home" />
             </Switch>
           </div>
