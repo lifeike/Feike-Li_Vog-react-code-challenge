@@ -22,12 +22,12 @@
 
 1. functions: please review the code comments
 2. posts endpoint:
-   - [getAll]()
-   - [add]()
-   - [edit]()
-   - [delete]()
-3. universities endpoint: [hello]()
-4. postal endpoint: [hello]()
+   - [getAll](https://jsonplaceholder.typicode.com/posts)
+   - [add](https://jsonplaceholder.typicode.com/posts)
+   - [edit](https://jsonplaceholder.typicode.com/posts/:id)
+   - [delete](https://jsonplaceholder.typicode.com/posts/:id)
+3. universities endpoint: [getAll](http://universities.hipolabs.com/search?country=Canada)
+4. postal endpoint: [getAll](https://api.zippopotam.us/us/code)
 
 #### Tech stack
 
