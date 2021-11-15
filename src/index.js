@@ -1,17 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
+import history from "./history"
+import store from "./store"
+import { Provider } from "react-redux"
+import { ConnectedRouter } from "connected-react-router"
+import Universities from "./routers/Universities"
+import Tab from "./components/Tab"
+import Loading from "./components/loading"
+import { Switch, Route, Redirect } from "react-router-dom"
+import "antd/dist/antd.css"
+import "./style/common.css"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <>
+        <Loading />
+        <div className="content">
+          <div className="container">
+            <Tab history={history} />
+            <Switch>
+              <Route path="/universities" component={() => <Universities />} />
+              <Redirect to="/universities" />
+            </Switch>
+          </div>
+        </div>
+      </>
+    </ConnectedRouter>
+  </Provider>,
+  document.getElementById("root")
+)
