@@ -1,0 +1,7 @@
+export const SHOW_LOADING = "SHOW_LOADING"
+export const HIDE_LOADING = "HIDE_LOADING"
+export const GET_HOMES = "GET_HOMES"
+export const GET_HOMES_BYID = "GET_HOMES_BYID"
+export const DEL_HOMES = "DEL_HOMES"
+export const ADD_HOMES = "ADD_HOMES"
+export const EDIT_HOMES = "EDIT_HOMES"
