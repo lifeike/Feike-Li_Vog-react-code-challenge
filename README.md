@@ -6,15 +6,23 @@
 2. installation
    - git clone && cd Feike-Li_Vog-react-code-challenge
    - npm install && npm start
+   - `git checkout feature/home` `git checkout feature/universities` `git checkout feature/postal-lookup`
+
+#### Tech stack
+
+- react
+- axios/axios-cache-adapter
+- react-bootstrap/antd
+- redux/react-redux/redux-logger/redux-promise/redux-thunk
+- connected-react-router
 
 #### Nice to have
 
-1. Add some local mock data to respond to users when remote server is down.
-2. add API key to cloud database to avoid dos attack
+1. Typescript
+2. Add some local mock data to respond to users when remote server is down.
 3. Use skeleton screen to make it more user friendly, due to time constraints, I used loading component instead.
 4. Use media query to make it more responsive
 5. For mobile side, add scroll down loading and scroll up refresh
-6. typescript
 
 #### Issue summary: N/A
 
@@ -28,14 +36,6 @@
    - [delete](https://jsonplaceholder.typicode.com/posts/:id)
 3. universities endpoint: [getAll](http://universities.hipolabs.com/search?country=Canada)
 4. postal endpoint: [getAll](https://api.zippopotam.us/us/code)
-
-#### Tech stack
-
-- react
-- axios/axios-cache-adapter
-- react-bootstrap/antd
-- redux/react-redux/redux-logger/redux-promise/redux-thunk
-- connected-react-router
 
 #### Screenshot
 
